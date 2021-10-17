@@ -1,0 +1,23 @@
+.center {
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: lightcyan;
+    text-align: center;
+}
+
+#correlationMatrix {
+    /* background-color: lightblue; */
+}
+
+svg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: gray;
+}
+
+text {
+    font-weight:bold;
+}

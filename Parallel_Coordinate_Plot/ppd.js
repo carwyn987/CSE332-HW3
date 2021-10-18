@@ -40,10 +40,8 @@ async function pcd() {
     let y = {}
     for(let i = 0; i<8; i++){
         let name = properties[i];
-        y[name] = d3.scaleLinear()
-                    .domain([d3.min(data, function(d){
-                        return d[name];
-                    }), d3.max(data, function(d){
+        y[name] = d3.scaleLog()
+                    .domain([1, d3.max(data, function(d){
                         return d[name];
                     })])
                     .range([height, 0]);

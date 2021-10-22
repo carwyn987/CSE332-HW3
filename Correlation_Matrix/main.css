@@ -11,6 +11,13 @@
     /* background-color: lightblue; */
 }
 
+legend {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: gray;
+}
+
 svg {
     display: block;
     margin-left: auto;

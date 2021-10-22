@@ -1,0 +1,29 @@
+.center {
+    margin: auto;
+    width: 99%;
+    /* padding: 10px; */
+    /* margin-top: 20px; */
+    background-color: lightcyan;
+    text-align: center;
+}
+
+svg {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: gray;
+    margin: 0px;
+    padding: 0px;
+    /* border: 1px black; */
+}
+
+#legend {
+    display: inline-flex;
+    /* margin-left: auto;
+    margin-right: auto; */
+    background-color: lightgray;
+    /* padding: 0px; */
+}
+
+h3 {
+    margin: 10px;
+}

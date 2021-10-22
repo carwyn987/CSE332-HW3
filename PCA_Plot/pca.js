@@ -160,6 +160,36 @@ async function createPCAPlot() {
                         .attr("r", 2)
                         .style("fill", "red");
 
+        // Add eigenvectors:
+
+        svg.append("marker")
+            .attr("id", "arrow")
+            .attr("markerWidth", 10)
+            .attr("markerHeight", 10)
+            .attr("refX", 0)
+            .attr("refY", 3)
+            .attr("orient", "auto")
+            .append("path")
+            .attr("d", "M0,0 L0,6 L9,3 z")
+
+        svg.append("line")
+                .attr("x1", xScale(0))
+                .attr("y1", yScale(0))
+                .attr("x2", xScale(-1))
+                .attr("y2", yScale(3.04477366))
+                .style("fill", "black")
+                .style("stroke", "black")
+                .attr("marker-end", "url(#arrow)");
+
+        svg.append("line")
+                .attr("x1", xScale(0))
+                .attr("y1", yScale(0))
+                .attr("x2", xScale(3.04477366))
+                .attr("y2", yScale(1))
+                .style("fill", "black")
+                .style("stroke", "black")
+                .attr("marker-end", "url(#arrow)");
+
         // Add labels
         svg.append("text")
             .attr("text-anchor", "end")
@@ -180,6 +210,8 @@ async function createPCAPlot() {
             .attr("y", 0-10)
             .text("PCA Plot")
             .style("font-weight", "bold")
+
+        return svg.node();
 
     }
 
